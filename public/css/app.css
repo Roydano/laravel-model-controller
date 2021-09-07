@@ -89,6 +89,23 @@ main {
   text-transform: uppercase;
 }
 
+.card-details {
+  background-color: white;
+  padding: 20px 0;
+}
+.card-details h2 {
+  text-align: center;
+}
+.card-details .details-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card-details .details-container p {
+  max-width: 30%;
+  padding-left: 20px;
+}
+
 footer {
   background-color: #303030;
 }

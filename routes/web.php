@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'DetailController@card')-> name('comics-product');
+
+Route::get('/detail/{id}', 'DetailController@show')->name('comic-details');

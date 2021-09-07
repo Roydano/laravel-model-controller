@@ -13,5 +13,11 @@ class DetailController extends Controller
         $data = ['series' => $series];
     
         return view('comic', $data);
-    }   
+    }  
+
+    public function show($id) {
+                $series = config('series');
+                $data = ['series' => $series[$id]];
+                return view('details', $data);
+            }
 }
