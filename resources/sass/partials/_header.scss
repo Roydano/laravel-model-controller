@@ -1,0 +1,62 @@
+//formattazione generale dell'header
+header{
+    li{
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .container, nav{
+        display: flex;
+    }
+}
+
+//formattazione dell'header top
+.header-top{
+    background-color: $primary-color;
+
+    .container{
+        justify-content: end;
+    }
+
+    li{
+        padding: 5px;
+        font-size: 9px;
+        
+        
+        a{
+            color: white;
+        }
+
+        &:first-child{
+            padding-right: 50px;
+        }
+    }
+}
+
+//formattazione dell'header bottom
+.header-bottom{
+    height: 80px;
+    
+    .logo{
+        height: 80px;
+
+        img{
+            height: 100%;
+            padding: 5px 0;
+        }
+    }
+
+    .container{
+        justify-content: space-between;
+        align-items: center;
+
+        li{
+            margin: 0 10px;
+            font-size: 14px;
+
+            a{
+                color: black;
+            }
+        }
+    }
+}

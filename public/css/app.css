@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+header li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+header .container, header nav {
+  display: flex;
+}
+
+.header-top {
+  background-color: #0282f9;
+}
+.header-top .container {
+  justify-content: end;
+}
+.header-top li {
+  padding: 5px;
+  font-size: 9px;
+}
+.header-top li a {
+  color: white;
+}
+.header-top li:first-child {
+  padding-right: 50px;
+}
+
+.header-bottom {
+  height: 80px;
+}
+.header-bottom .logo {
+  height: 80px;
+}
+.header-bottom .logo img {
+  height: 100%;
+  padding: 5px 0;
+}
+.header-bottom .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bottom .container li {
+  margin: 0 10px;
+  font-size: 14px;
+}
+.header-bottom .container li a {
+  color: black;
+}
+
+.jumbo {
+  height: 400px;
+  width: 100%;
+  background-color: red;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
+.comics {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.comics .card {
+  width: calc((100% / 12) * 2);
+  margin: 10px 0;
+}
+.comics .card h5 {
+  color: white;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #303030;
+}
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+footer .footer-bottom button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid #0282f9;
+  background-color: #303030;
+  color: white;
+}
+footer .footer-bottom h4 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+footer .footer-bottom .social {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .social img {
+  margin-right: 10px;
+}
