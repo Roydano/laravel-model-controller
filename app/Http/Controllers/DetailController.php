@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Comic;
 
 class DetailController extends Controller
 {
     //
     public function card() {
 
-        $series = config('series');
-        $data = ['series' => $series];
+        $series = Comic::all();
     
-        return view('comic', $data);
+        return view('comic', compact('series'));
     }  
 
     public function show($id) {
