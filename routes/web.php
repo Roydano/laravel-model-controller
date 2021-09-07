@@ -13,10 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-
-    $series = config('series');
-    $data = ['series' => $series];
-
-    return view('comic', $data);
-})-> name('comics-product');
+Route::get('/', 'DetailController@card')-> name('comics-product');
