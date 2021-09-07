@@ -5,11 +5,11 @@
 
     <div class="card-details">
 
-        <h2>{{$series['title']}}</h2>
+        <h2>{{$serie['title']}}</h2>
         <div class="details-container">
-           <img src="{{$series['thumb']}}" alt="{{$series['title']}}">
+           <img src="{{$serie['thumb']}}" alt="{{$serie['title']}}">
            <p>
-               {{$series['description']}}
+               {{$serie['description']}}
            </p>
         </div>
         

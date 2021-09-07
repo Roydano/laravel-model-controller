@@ -16,8 +16,7 @@ class DetailController extends Controller
     }  
 
     public function show($id) {
-                $series = config('series');
-                $data = ['series' => $series[$id]];
-                return view('details', $data);
+                $serie = Comic::where('id', $id) ->first();
+                return view('details', compact('serie'));
             }
 }
